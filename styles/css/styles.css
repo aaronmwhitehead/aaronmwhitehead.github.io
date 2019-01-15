@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.container .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 710px;
+  background-image: url("../../root/images/forest.jpg");
+  background-size: 1900px;
+  background-repeat: no-repeat;
+}
+.container .header .header-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  height: 230px;
+  width: 60%;
+  color: white;
+}
+.container .header .header-info .headshot {
+  height: 300px;
+  width: 300px;
+  border-radius: 150px;
+  margin-top: -125px;
+  background-image: url("../../root/images/sanfran.jpg");
+  background-size: cover;
+  position: absolute;
+}
+.container .header .header-info .name {
+  font-size: 65px;
+  font-weight: 200;
+  margin-top: 180px;
+}
+.container .header .header-info .contact {
+  font-weight: 300;
+  font-size: 25px;
+}
+.container .body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.container .body .section {
+  display: flex;
+  padding: 40px;
+}
+.container .body .section.experience {
+  background: #5CDB95;
+  color: #EDF5E1;
+}
+.container .body .section .section-header {
+  flex: 1;
+  height: 100%;
+  align-self: flex-start;
+  font-size: 45px;
+  font-weight: 600;
+  margin-right: 20px;
+}
+.container .body .section .section-header .decor {
+  height: 10px;
+  width: 45px;
+  border-radius: 10px;
+  background: #379683;
+  margin-bottom: 10px;
+}
+.container .body .section .section-body {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+.container .body .section .section-body .heading {
+  font-size: 30px;
+  color: #000;
+}
+.container .body .section .section-body .subheading {
+  color: #05386B;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.container .body .section .section-body .date {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #000;
+}
+.container .body .section .section-body p {
+  color: #000;
+  padding: 2px;
+}
+.container .body .section .section-body .swiper-container {
+  width: 1000px;
+  height: 300px;
+  padding: 30px;
+  background: #8EE4AF;
+  border-radius: 30px;
+}
+.container .body .section .section-body .swiper-container .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.container .body .section .section-body .swiper-container .swiper-slide.slide-1 {
+  background: url("../../root/images/degreeplanner.jpg");
+  background-size: cover;
+}
+.container .body .section .section-body .swiper-container .swiper-slide.slide-2 {
+  background: url("../../root/images/website.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.container .body .section .section-body .swiper-container .swiper-slide.slide-3 {
+  background: url("../../root/images/pancakeflipper.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.container .body .section .section-body .swiper-container .swiper-slide.slide-4 {
+  background: url("../../root/images/degreeplanner.jpg");
+  background-size: cover;
+}
+.container .fab {
+  font-size: 40px;
+  padding: 10px;
+  color: #fff;
+}
+.container .footer {
+  height: 60px;
+  width: 100vw;
+  background: #379683;
+  color: white;
+}
+
+/*# sourceMappingURL=styles.css.map */
