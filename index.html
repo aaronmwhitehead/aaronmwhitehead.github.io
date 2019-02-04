@@ -13,13 +13,14 @@
 	  <script src="js/jquery.paroller.min.js"></script>
 	  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 
-
-
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.5/css/swiper.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.5/css/swiper.min.css">
 
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.6/js/swiper.min.js"></script>
+
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/inview.min.js"></script>
 
 </head>
 <body>
@@ -29,7 +30,7 @@
 			<div class="header-info">
 				<div class="headshot"></div>
 				<div class="name">Aaron Whitehead</div>
-				<span class="contact">aaronwhitehead4@gmail.com | (830)279-7493</span>
+				<span class="contact"><!-- aaronwhitehead4@gmail.com | (830)279-7493 --></span>
 				<div class="social-icons">
 					<a href="#"><i class="fab fa-linkedin-in"></i></a>
 					<a href="#"><i class="fab fa-github"></i></a>
@@ -41,8 +42,49 @@
 			<div class="skills section">
 				<div class="section-header"><div class="decor"></div>About Me</div>
 				<div class="section-body">
-					<span class="heading">Skills</span>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+					<span class="heading"></span>
+					<div class="skills-graphs">
+						<svg viewBox="0 0 36 36">
+							<!-- <path class="circle-bg"
+						        d="M18 2.0845
+								a 15.9155 15.9155 0 0 1 0 31.831
+								a 15.9155 15.9155 0 0 1 0 -31.831"
+							/> -->
+							<path class="circle"
+								d="M18 2.0845
+								a 15.9155 15.9155 0 0 1 0 31.831
+								a 15.9155 15.9155 0 0 1 0 -31.831"
+								stroke-dasharray="100, 100"
+							/>
+							<path class="circle2"
+								d="M18 2.0845
+								a 15.9155 15.9155 0 0 1 0 31.831
+								a 15.9155 15.9155 0 0 1 0 -31.831"
+								stroke-dasharray="75, 100"
+							/>
+							<path class="circle3"
+								d="M18 2.0845
+								a 15.9155 15.9155 0 0 1 0 31.831
+								a 15.9155 15.9155 0 0 1 0 -31.831"
+								stroke-dasharray="55, 100"
+							/>
+							<path class="circle4"
+								d="M18 2.0845
+								a 15.9155 15.9155 0 0 1 0 31.831
+								a 15.9155 15.9155 0 0 1 0 -31.831"
+								stroke-dasharray="40, 100"
+							/>
+							<path class="circle5"
+								d="M18 2.0845
+								a 15.9155 15.9155 0 0 1 0 31.831
+								a 15.9155 15.9155 0 0 1 0 -31.831"
+								stroke-dasharray="20, 100"
+							/>
+
+							<text x="18" y="18.35" class="percentage"></text>
+							<text x="18" y="25.35" class="skill"></text>
+						</svg>
+					</div>
 					<span class="heading">Education</span>
 					<span class="subheading">BS COMPUTER ENGINEERING, TEXAS A&M UNIVERSITY</span>
 					<span class="date">DECEMBER 2019</span>
@@ -67,13 +109,13 @@
 						<!-- Additional required wrapper -->
 						<div class="swiper-wrapper">
 						<!-- Slides -->
-							<div class="swiper-slide slide-1"></div>
+							<div class="swiper-slide slide-1"><a href="https://aaronmwhitehead.github.io/degreeplanner/"></a></div>
 							<div class="swiper-slide slide-2"></div>
 							<div class="swiper-slide slide-3"></div>
 							<div class="swiper-slide slide-4"></div>
 						</div>
 						<!-- If we need pagination -->
-						<!-- <div class="swiper-pagination"></div> -->
+						<div class="swiper-pagination"></div>
 
 						<!-- If we need scrollbar -->
 						<!-- <div class="swiper-scrollbar"></div> -->
@@ -125,6 +167,27 @@
 		// }
 
 		// var typed = new Typed(".name", options);
+
+	var inview = new Waypoint.Inview({
+		element: $('.circle'),
+		// enter: function(direction) {
+		// 	console.log('Enter triggered with direction ' + direction)
+		// },
+		entered: function(direction) {
+			$('.circle').addClass('animate'); 
+			$('.circle2').addClass('animate'); 
+			$('.circle3').addClass('animate'); 
+			$('.circle4').addClass('animate'); 
+			$('.circle5').addClass('animate'); 
+		}
+		// exit: function(direction) {
+		// 	console.log('Exit triggered with direction ' + direction)
+		// },
+		// exited: function(direction) {
+		// 	console.log('Exited triggered with direction ' + direction)
+		// }
+	})
+
 	</script>
 </body>
 </html>
