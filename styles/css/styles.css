@@ -65,21 +65,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background: red;
+  min-width: 100%;
+  height: 1000px;
 }
 .container .body .section.skills .skills-graphs svg {
-  height: 400px;
-}
-.container .body .section.skills .skills-graphs svg .circle-bg {
-  fill: none;
-  stroke: #aaa;
-  stroke-width: 0.1;
+  max-height: 500px;
+  min-width: 100%;
+  background: black;
 }
 .container .body .section.skills .skills-graphs svg .circle, .container .body .section.skills .skills-graphs svg .circle2, .container .body .section.skills .skills-graphs svg .circle3, .container .body .section.skills .skills-graphs svg .circle4, .container .body .section.skills .skills-graphs svg .circle5 {
   fill: none;
   stroke-width: 4;
 }
-.container .body .section.skills .skills-graphs svg .circle.animate, .container .body .section.skills .skills-graphs svg .circle2.animate, .container .body .section.skills .skills-graphs svg .circle3.animate, .container .body .section.skills .skills-graphs svg .circle4.animate, .container .body .section.skills .skills-graphs svg .circle5.animate {
-  animation: progress 2.2s ease-out forwards;
+.container .body .section.skills .skills-graphs svg .circle.animate-circle, .container .body .section.skills .skills-graphs svg .circle2.animate-circle, .container .body .section.skills .skills-graphs svg .circle3.animate-circle, .container .body .section.skills .skills-graphs svg .circle4.animate-circle, .container .body .section.skills .skills-graphs svg .circle5.animate-circle {
+  animation: progress 0.1s ease-out forwards;
 }
 .container .body .section.skills .skills-graphs svg .circle {
   stroke: red;
@@ -93,23 +93,29 @@
 .container .body .section.skills .skills-graphs svg .circle4 {
   stroke: purple;
 }
-.container .body .section.skills .skills-graphs svg .circle5 {
-  stroke: blue;
-}
-.container .body .section.skills .skills-graphs svg .percentage {
-  font-family: sans-serif;
-  font-size: 8px;
-  text-anchor: middle;
-}
 .container .body .section.skills .skills-graphs svg .skill {
-  font-family: sans-serif;
-  font-size: 3px;
-  text-anchor: middle;
   fill: #aaa;
+  opacity: 0;
+  font-size: 2px;
+}
+.container .body .section.skills .skills-graphs svg .skill.animate-text {
+  animation: fadeInUp 0.1s ease-in-out 0s forwards;
 }
 @keyframes progress {
   0% {
     stroke-dasharray: 0 100;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
   }
 }
 .container .body .section .section-header {

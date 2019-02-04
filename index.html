@@ -45,11 +45,6 @@
 					<span class="heading"></span>
 					<div class="skills-graphs">
 						<svg viewBox="0 0 36 36">
-							<!-- <path class="circle-bg"
-						        d="M18 2.0845
-								a 15.9155 15.9155 0 0 1 0 31.831
-								a 15.9155 15.9155 0 0 1 0 -31.831"
-							/> -->
 							<path class="circle"
 								d="M18 2.0845
 								a 15.9155 15.9155 0 0 1 0 31.831
@@ -60,29 +55,25 @@
 								d="M18 2.0845
 								a 15.9155 15.9155 0 0 1 0 31.831
 								a 15.9155 15.9155 0 0 1 0 -31.831"
-								stroke-dasharray="75, 100"
+								stroke-dasharray="90, 100"
 							/>
 							<path class="circle3"
 								d="M18 2.0845
 								a 15.9155 15.9155 0 0 1 0 31.831
 								a 15.9155 15.9155 0 0 1 0 -31.831"
-								stroke-dasharray="55, 100"
+								stroke-dasharray="70, 100"
 							/>
 							<path class="circle4"
 								d="M18 2.0845
 								a 15.9155 15.9155 0 0 1 0 31.831
 								a 15.9155 15.9155 0 0 1 0 -31.831"
-								stroke-dasharray="40, 100"
+								stroke-dasharray="45, 100"
 							/>
-							<path class="circle5"
-								d="M18 2.0845
-								a 15.9155 15.9155 0 0 1 0 31.831
-								a 15.9155 15.9155 0 0 1 0 -31.831"
-								stroke-dasharray="20, 100"
-							/>
+							<text x="30" y="5" class="skill">Web Development</text>
+							<text x="0" y="5" class="skill">Data Science</text>
+							<text x="-12" y="12" class="skill">App Development</text>
+							<text x="-10" y="30" class="skill">Back-end Development</text>
 
-							<text x="18" y="18.35" class="percentage"></text>
-							<text x="18" y="25.35" class="skill"></text>
 						</svg>
 					</div>
 					<span class="heading">Education</span>
@@ -170,24 +161,14 @@
 
 	var inview = new Waypoint.Inview({
 		element: $('.circle'),
-		// enter: function(direction) {
-		// 	console.log('Enter triggered with direction ' + direction)
-		// },
 		entered: function(direction) {
-			$('.circle').addClass('animate'); 
-			$('.circle2').addClass('animate'); 
-			$('.circle3').addClass('animate'); 
-			$('.circle4').addClass('animate'); 
-			$('.circle5').addClass('animate'); 
+			$('.circle').addClass('animate-circle'); 
+			$('.circle2').addClass('animate-circle'); 
+			$('.circle3').addClass('animate-circle'); 
+			$('.circle4').addClass('animate-circle'); 
+			$('.skill').addClass('animate-text'); 
 		}
-		// exit: function(direction) {
-		// 	console.log('Exit triggered with direction ' + direction)
-		// },
-		// exited: function(direction) {
-		// 	console.log('Exited triggered with direction ' + direction)
-		// }
 	})
-
 	</script>
 </body>
 </html>
