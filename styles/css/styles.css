@@ -62,36 +62,35 @@
   color: #EDF5E1;
 }
 .container .body .section.skills .skills-graphs {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: red;
-  min-width: 100%;
-  height: 1000px;
+  width: 100%;
 }
 .container .body .section.skills .skills-graphs svg {
-  max-height: 500px;
-  min-width: 100%;
-  background: black;
+  height: 100%;
+  width: 100%;
 }
 .container .body .section.skills .skills-graphs svg .circle, .container .body .section.skills .skills-graphs svg .circle2, .container .body .section.skills .skills-graphs svg .circle3, .container .body .section.skills .skills-graphs svg .circle4, .container .body .section.skills .skills-graphs svg .circle5 {
   fill: none;
   stroke-width: 4;
 }
+.container .body .section.skills .skills-graphs svg .circle:hover, .container .body .section.skills .skills-graphs svg .circle2:hover, .container .body .section.skills .skills-graphs svg .circle3:hover, .container .body .section.skills .skills-graphs svg .circle4:hover, .container .body .section.skills .skills-graphs svg .circle5:hover {
+  stroke: #EDF5E1;
+  stroke-width: 5;
+  cursor: pointer;
+}
 .container .body .section.skills .skills-graphs svg .circle.animate-circle, .container .body .section.skills .skills-graphs svg .circle2.animate-circle, .container .body .section.skills .skills-graphs svg .circle3.animate-circle, .container .body .section.skills .skills-graphs svg .circle4.animate-circle, .container .body .section.skills .skills-graphs svg .circle5.animate-circle {
-  animation: progress 0.1s ease-out forwards;
+  animation: progress 2s ease-out forwards;
 }
 .container .body .section.skills .skills-graphs svg .circle {
-  stroke: red;
+  stroke: #8EE4AF;
 }
 .container .body .section.skills .skills-graphs svg .circle2 {
-  stroke: green;
+  stroke: #5CDB95;
 }
 .container .body .section.skills .skills-graphs svg .circle3 {
-  stroke: orange;
+  stroke: #379683;
 }
 .container .body .section.skills .skills-graphs svg .circle4 {
-  stroke: purple;
+  stroke: #05386B;
 }
 .container .body .section.skills .skills-graphs svg .skill {
   fill: #aaa;
@@ -99,24 +98,14 @@
   font-size: 2px;
 }
 .container .body .section.skills .skills-graphs svg .skill.animate-text {
-  animation: fadeInUp 0.1s ease-in-out 0s forwards;
+  animation: fadeInUp 1s ease-in-out 0s forwards;
+  animation-delay: 2.2s;
 }
-@keyframes progress {
-  0% {
-    stroke-dasharray: 0 100;
-  }
-}
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
-  }
+.container .body .section.skills .skills-graphs svg .rect {
+  height: 10px;
+  width: 10px;
+  fill-opacity: 0;
+  transition: opacity 1s;
 }
 .container .body .section .section-header {
   flex: 1;
@@ -204,6 +193,24 @@
   width: 100vw;
   background: #379683;
   color: white;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

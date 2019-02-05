@@ -44,36 +44,43 @@
 				<div class="section-body">
 					<span class="heading"></span>
 					<div class="skills-graphs">
-						<svg viewBox="0 0 36 36">
+						<svg viewBox="-32 -7.0845 100 50">
 							<path class="circle"
 								d="M18 2.0845
 								a 15.9155 15.9155 0 0 1 0 31.831
 								a 15.9155 15.9155 0 0 1 0 -31.831"
-								stroke-dasharray="100, 100"
+								stroke-dashoffset="-90"
+								stroke-dasharray="10, 100"
 							/>
 							<path class="circle2"
 								d="M18 2.0845
 								a 15.9155 15.9155 0 0 1 0 31.831
 								a 15.9155 15.9155 0 0 1 0 -31.831"
-								stroke-dasharray="90, 100"
+								stroke-dashoffset="-70"
+								stroke-dasharray="20, 100"
 							/>
 							<path class="circle3"
 								d="M18 2.0845
 								a 15.9155 15.9155 0 0 1 0 31.831
 								a 15.9155 15.9155 0 0 1 0 -31.831"
-								stroke-dasharray="70, 100"
+								stroke-dashoffset="-45"
+								stroke-dasharray="25, 100"
 							/>
 							<path class="circle4"
 								d="M18 2.0845
 								a 15.9155 15.9155 0 0 1 0 31.831
 								a 15.9155 15.9155 0 0 1 0 -31.831"
+								stroke-dashoffset="0"
 								stroke-dasharray="45, 100"
 							/>
-							<text x="30" y="5" class="skill">Web Development</text>
-							<text x="0" y="5" class="skill">Data Science</text>
-							<text x="-12" y="12" class="skill">App Development</text>
-							<text x="-10" y="30" class="skill">Back-end Development</text>
-
+							<text x="35" y="5" class="skill">Web Development</text>
+							<text x="-10" y="2" class="skill">Data Science</text>
+							<text x="-22" y="12" class="skill">App Development</text>
+							<text x="-25" y="30" class="skill">Back-end Development</text>
+							<rect x="0" y="0" class="rect rect-1"/>
+							<rect x="5" y="5" class="rect rect-2"/>
+							<rect x="10" y="10" class="rect rect-3"/>
+							<rect x="15" y="15" class="rect rect-4"/>
 						</svg>
 					</div>
 					<span class="heading">Education</span>
@@ -127,10 +134,10 @@
 
 		var mySwiper = new Swiper ('.swiper-container', {
 		    // Optional parameters
-		    direction: 'horizontal',
-		    loop: false,
-		    slidesPerView: 3,
-      		spaceBetween: 30,
+			direction: 'horizontal',
+			loop: false,
+			slidesPerView: 3,
+			spaceBetween: 30,
 
 		    // If we need pagination
 		    pagination: {
@@ -169,6 +176,11 @@
 			$('.skill').addClass('animate-text'); 
 		}
 	})
+
+	// $(".circle").hover(function(){
+	// 		$(".rect").css("fill-opacity", "1");
+	// });
+
 	</script>
 </body>
 </html>
