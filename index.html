@@ -32,8 +32,8 @@
 				<div class="name">Aaron Whitehead</div>
 				<span class="contact"><!-- aaronwhitehead4@gmail.com | (830)279-7493 --></span>
 				<div class="social-icons">
-					<a href="#"><i class="fab fa-linkedin-in"></i></a>
-					<a href="#"><i class="fab fa-github"></i></a>
+					<a href="https://www.linkedin.com/in/aaron-whitehead-a3b448158/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+					<a href="http://github.com/aaronmwhitehead" target="_blank"><i class="fab fa-github"></i></a>
 					<a href="#"><i class="fab fa-instagram"></i></a>
 				</div>
 			</div>
@@ -43,6 +43,11 @@
 				<div class="section-header"><div class="decor"></div>About Me</div>
 				<div class="section-body">
 					<span class="heading"></span>
+					<div class="education">
+						<span class="heading">Education</span>
+						<span class="subheading">BS COMPUTER ENGINEERING, TEXAS A&M UNIVERSITY</span>
+						<span class="date">DECEMBER 2019</span>
+					</div>
 					<div class="skills-graphs">
 						<svg viewBox="-32 -7.0845 100 50">
 							<path class="circle"
@@ -73,19 +78,41 @@
 								stroke-dashoffset="0"
 								stroke-dasharray="45, 100"
 							/>
-							<text x="35" y="5" class="skill">Web Development</text>
-							<text x="-10" y="2" class="skill">Data Science</text>
-							<text x="-22" y="12" class="skill">App Development</text>
-							<text x="-25" y="30" class="skill">Back-end Development</text>
-							<rect x="0" y="0" class="rect rect-1"/>
-							<rect x="5" y="5" class="rect rect-2"/>
-							<rect x="10" y="10" class="rect rect-3"/>
-							<rect x="15" y="15" class="rect rect-4"/>
+
+							<g class="test">
+							<text x="40" y="5" class="skill web-development">
+								<tspan x="40">Web Development</tspan>
+								<tspan x="40" dy="1.2em" class="skill-subset">JavaScript</tspan>
+								<tspan x="40" dy="1.2em" class="skill-subset">HTML</tspan>
+								<tspan x="40" dy="1.2em" class="skill-subset">CSS</tspan>
+								<tspan x="40" dy="1.2em" class="skill-subset">Responsive Web Design</tspan>
+								<tspan x="40" dy="1.2em" class="skill-subset">jQuery</tspan>
+								<tspan x="40" dy="1.2em" class="skill-subset">React</tspan>
+							</text>
+							</g>
+
+							<text x="-8" y="-1" class="skill data-science">
+								<tspan x="-8" dy="1.2em">Data Science</tspan>
+								<tspan x="-8" dy="1.2em" class="skill-subset">Python</tspan>
+								<tspan x="-8" dy="1.2em" class="skill-subset">MATLAB</tspan>
+								<!-- <tspan x="-8" dy="1.2em" class="skill-subset">Python</tspan> -->
+							</text>
+
+							<text x="-22" y="12" class="skill app-development">
+								<tspan x="-22" dy="1.2em">App Development</tspan>
+								<tspan x="-22" dy="1.6em" class="skill-subset">C/C++</tspan>
+								<tspan x="-22" dy="1.2em" class="skill-subset">Java</tspan>
+							</text>
+
+							<text x="-20" y="30" class="skill back-end">
+								<tspan x="-20" dy="1.2em">Back-end Development</tspan>
+								<tspan x="-20" dy="1.2em" class="skill-subset">Node.js</tspan>
+								<tspan x="-20" dy="1.2em" class="skill-subset">MongoDB</tspan>
+								<tspan x="-20" dy="1.2em" class="skill-subset">Express</tspan>
+								<tspan x="-20" dy="1.2em" class="skill-subset">AWS</tspan>
+							</text>
 						</svg>
 					</div>
-					<span class="heading">Education</span>
-					<span class="subheading">BS COMPUTER ENGINEERING, TEXAS A&M UNIVERSITY</span>
-					<span class="date">DECEMBER 2019</span>
 				</div>
 			</div>
 			<div class="experience section">
@@ -94,10 +121,15 @@
 					<span class="heading"><!--  &#10687  -->UI ENGINEER INTERN</span>
 					<span class="subheading">COX AUTOMOTIVE INC.</span>
 					<span class="date">MAY 2018 - AUGUST 2018</span>
-					<p>• Developed unique, response-driven user experiences that affect thousands of sites throughout the platform.</p>
-					<p>• Participated in fast-paced Agile setting to ensure continuous delivery of quality code. </p>
-					<p>• Held a role as an active developer of two highly efficient Scrum teams.</p>
-					<p>• Worked closely with senior developers working on multiple release trains in a highly collaborative enterprise environment.</p>
+					<p>• Developed unique, response-driven user experiences that affect thousands of sites throughout the platform</p>
+					<p>• Participated in fast-paced Agile setting to ensure continuous delivery of quality code </p>
+					<p>• Held a role as an active developer of two highly efficient Scrum teams</p>
+					<p>• Worked closely with senior developers working on multiple release trains in a highly collaborative enterprise environment</p>
+					<span class="heading ra">RESIDENT ADVISOR</span>
+					<span class="subheading">TEXAS A&M UNIVERSITY</span>
+					<span class="date">AUGUST 2017 - PRESENT</span>
+					<p>• Manages a floor of over 50 undergraduate students</p>
+					<p>• Counsels students though academic and social changes that come with college life</p>
 				</div>
 			</div>
 			<div class="projects section">
@@ -107,13 +139,16 @@
 						<!-- Additional required wrapper -->
 						<div class="swiper-wrapper">
 						<!-- Slides -->
-							<div class="swiper-slide slide-1"><a href="https://aaronmwhitehead.github.io/degreeplanner/"></a></div>
-							<div class="swiper-slide slide-2"></div>
-							<div class="swiper-slide slide-3"></div>
+							<div class="swiper-slide slide-1"><a href="https://aaronmwhitehead.github.io/degreeplanner/" target="_blank"></a></div>
+							<div class="swiper-slide slide-2"><a href="https://github.com/aaronmwhitehead/paradigm" target="_blank"></a></div>
+							<div class="swiper-slide slide-3"><a href="https://github.com/aaronmwhitehead/cardioid-fiber" target="_blank"></a></div>
 							<div class="swiper-slide slide-4"></div>
+							<div class="swiper-slide slide-5"><a href="https://www.youtube.com/watch?v=jqUaF1kP37k" target="_blank"></a></div>
 						</div>
 						<!-- If we need pagination -->
 						<div class="swiper-pagination"></div>
+						<!-- <div class="swiper-button-next"></div>
+    					<div class="swiper-button-prev"></div> -->
 
 						<!-- If we need scrollbar -->
 						<!-- <div class="swiper-scrollbar"></div> -->
@@ -122,8 +157,8 @@
 			</div>
 		</div>
 		<div class="footer">
-			<a href="#"><i class="fab fa-linkedin-in"></i></a>
-			<a href="#"><i class="fab fa-github"></i></a>
+			<a href="https://www.linkedin.com/in/aaron-whitehead-a3b448158/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+			<a href="http://github.com/aaronmwhitehead" target="_blank"><i class="fab fa-github"></i></a>
 			<a href="#"><i class="fab fa-instagram"></i></a>
 		</div>
 	</div>
@@ -142,19 +177,15 @@
 		    // If we need pagination
 		    pagination: {
 		      el: '.swiper-pagination',
-		    }
+		      clickable: true,
+		    },
 
 		    // Navigation arrows
 		    // navigation: {
 		    //   nextEl: '.swiper-button-next',
 		    //   prevEl: '.swiper-button-prev',
-		    // }
-
-		    // And if we need scrollbar
-		    // scrollbar: {
-		    //   el: '.swiper-scrollbar',
 		    // },
-		  })
+		  }); 
 
 		// var options = {
 		// 	strings: ["Hi I'm", "Hi I'm a Developer", "Hi I'm a Juggler", "Hi I'm a Learner", "Hi I'm Aaron Whitehead"],
@@ -166,21 +197,61 @@
 
 		// var typed = new Typed(".name", options);
 
-	var inview = new Waypoint.Inview({
-		element: $('.circle'),
-		entered: function(direction) {
-			$('.circle').addClass('animate-circle'); 
-			$('.circle2').addClass('animate-circle'); 
-			$('.circle3').addClass('animate-circle'); 
-			$('.circle4').addClass('animate-circle'); 
-			$('.skill').addClass('animate-text'); 
-		}
-	})
+		var inview = new Waypoint.Inview({
+			element: $('.back-end'),
+			entered: function(direction) {
+				$('.circle').addClass('animate-circle'); 
+				$('.circle2').addClass('animate-circle'); 
+				$('.circle3').addClass('animate-circle'); 
+				$('.circle4').addClass('animate-circle'); 
+				$('.skill').addClass('animate-text'); 
+			}
+		})
 
-	// $(".circle").hover(function(){
-	// 		$(".rect").css("fill-opacity", "1");
-	// });
+		var inview2 = new Waypoint.Inview({
+			element: $('.education'),
+			enter: function(direction) {
+				$('.education').addClass('animate-education'); 
+			}
+		})
 
+		var inview3 = new Waypoint.Inview({
+			element: $('.experience'),
+			enter: function(direction) {
+				$('.experience').addClass('animate-experience'); 
+			}
+		})
+
+		var inview4 = new Waypoint.Inview({
+			element: $('.projects'),
+			enter: function(direction) {
+				$('.projects').addClass('animate-projects'); 
+			}
+		})
+
+
+
+		$(".circle").hover(function(){
+			$(".data-science > .skill-subset").addClass('animate-skill');
+		}, function(){
+			$(".data-science > .skill-subset").removeClass('animate-skill');
+		});
+		$(".circle2").hover(function(){
+			$(".app-development > .skill-subset").addClass('animate-skill');
+		}, function(){
+			$(".app-development > .skill-subset").removeClass('animate-skill');
+		});
+		$(".circle3").hover(function(){
+			$(".back-end > .skill-subset").addClass('animate-skill');
+		}, function(){
+			$(".back-end > .skill-subset").removeClass('animate-skill');
+		});
+		$(".circle4").hover(function(){
+			$(".web-development > .skill-subset").addClass('animate-skill');
+		}, function(){
+			$(".web-development > .skill-subset").removeClass('animate-skill');
+		});
+	
 	</script>
 </body>
 </html>
