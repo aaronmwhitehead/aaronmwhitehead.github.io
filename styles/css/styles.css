@@ -245,7 +245,7 @@
     -webkit-transform: none;
     transform: none;
   }
-}
+} 
 @keyframes fadeOutDown {
   0% {
     opacity: 1;
