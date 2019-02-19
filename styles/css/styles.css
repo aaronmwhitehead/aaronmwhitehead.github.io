@@ -39,8 +39,7 @@
   position: absolute;
 }
 .container .header .header-info .name {
-  font-size: 65px;
-  font-weight: 200;
+  text-align: center;
   margin-top: 180px;
 }
 .container .header .header-info .contact {
@@ -54,7 +53,6 @@
   height: 100%;
 }
 .container .body .section {
-  display: flex;
   padding: 40px;
 }
 .container .body .section.experience {
@@ -68,54 +66,54 @@
 .container .body .section.skills .skills-graphs {
   width: 100%;
 }
-.container .body .section.skills .skills-graphs svg {
+.container .body .section.skills .skills-graphs .viewBox {
   height: 100%;
   width: 100%;
 }
-.container .body .section.skills .skills-graphs svg .circle, .container .body .section.skills .skills-graphs svg .circle2, .container .body .section.skills .skills-graphs svg .circle3, .container .body .section.skills .skills-graphs svg .circle4, .container .body .section.skills .skills-graphs svg .circle5 {
+.container .body .section.skills .skills-graphs .viewBox .circle, .container .body .section.skills .skills-graphs .viewBox .circle2, .container .body .section.skills .skills-graphs .viewBox .circle3, .container .body .section.skills .skills-graphs .viewBox .circle4, .container .body .section.skills .skills-graphs .viewBox .circle5 {
   fill: none;
   stroke-width: 4;
   transition: 0.4s stroke-width;
   opacity: 0;
 }
-.container .body .section.skills .skills-graphs svg .circle:hover, .container .body .section.skills .skills-graphs svg .circle2:hover, .container .body .section.skills .skills-graphs svg .circle3:hover, .container .body .section.skills .skills-graphs svg .circle4:hover, .container .body .section.skills .skills-graphs svg .circle5:hover {
+.container .body .section.skills .skills-graphs .viewBox .circle:hover, .container .body .section.skills .skills-graphs .viewBox .circle2:hover, .container .body .section.skills .skills-graphs .viewBox .circle3:hover, .container .body .section.skills .skills-graphs .viewBox .circle4:hover, .container .body .section.skills .skills-graphs .viewBox .circle5:hover {
   stroke: #EDF5E1;
   transition: 0.4s stroke-width;
   stroke-width: 5;
   cursor: pointer;
 }
-.container .body .section.skills .skills-graphs svg .circle.animate-circle, .container .body .section.skills .skills-graphs svg .circle2.animate-circle, .container .body .section.skills .skills-graphs svg .circle3.animate-circle, .container .body .section.skills .skills-graphs svg .circle4.animate-circle, .container .body .section.skills .skills-graphs svg .circle5.animate-circle {
+.container .body .section.skills .skills-graphs .viewBox .circle.animate-circle, .container .body .section.skills .skills-graphs .viewBox .circle2.animate-circle, .container .body .section.skills .skills-graphs .viewBox .circle3.animate-circle, .container .body .section.skills .skills-graphs .viewBox .circle4.animate-circle, .container .body .section.skills .skills-graphs .viewBox .circle5.animate-circle {
   opacity: 1;
   animation: progress 1.7s ease-out forwards;
 }
-.container .body .section.skills .skills-graphs svg .circle {
+.container .body .section.skills .skills-graphs .viewBox .circle {
   stroke: #8EE4AF;
 }
-.container .body .section.skills .skills-graphs svg .circle2 {
+.container .body .section.skills .skills-graphs .viewBox .circle2 {
   stroke: #5CDB95;
 }
-.container .body .section.skills .skills-graphs svg .circle3 {
+.container .body .section.skills .skills-graphs .viewBox .circle3 {
   stroke: #379683;
 }
-.container .body .section.skills .skills-graphs svg .circle4 {
+.container .body .section.skills .skills-graphs .viewBox .circle4 {
   stroke: #05386B;
 }
-.container .body .section.skills .skills-graphs svg .skill {
+.container .body .section.skills .skills-graphs .viewBox .skill {
   fill: #777;
   opacity: 0;
   font-size: 2px;
 }
-.container .body .section.skills .skills-graphs svg .skill.animate-text {
+.container .body .section.skills .skills-graphs .viewBox .skill.animate-text {
   animation: fadeInUp 1s ease-in-out 0s forwards;
   animation-delay: 1s;
 }
-.container .body .section.skills .skills-graphs svg .skill .skill-subset {
+.container .body .section.skills .skills-graphs .viewBox .skill .skill-subset {
   opacity: 0;
   font-size: 0.8em;
   transition: all 1s;
   fill: #aaa;
 }
-.container .body .section.skills .skills-graphs svg .skill .skill-subset.animate-skill {
+.container .body .section.skills .skills-graphs .viewBox .skill .skill-subset.animate-skill {
   transition: all 0.4s ease-out;
   opacity: 1;
 }
@@ -142,11 +140,11 @@
   margin-right: 20px;
 }
 .container .body .section .section-header .decor {
-  height: 10px;
-  width: 45px;
   border-radius: 10px;
   background: #379683;
   margin-bottom: 10px;
+  width: 45px;
+  height: 10px;
 }
 .container .body .section .section-body {
   flex: 4;
@@ -245,7 +243,7 @@
     -webkit-transform: none;
     transform: none;
   }
-} 
+}
 @keyframes fadeOutDown {
   0% {
     opacity: 1;
@@ -254,6 +252,44 @@
   100% {
     opacity: 0;
     transform: translateY(20px);
+  }
+}
+@media all and (max-width: 1690px) {
+  .section {
+    display: flex;
+  }
+
+  .name {
+    font-size: 65px;
+    font-weight: 200;
+  }
+}
+@media all and (max-width: 1280px) {
+  .name {
+    font-size: 55px;
+    font-weight: 200;
+  }
+}
+@media all and (max-width: 980px) {
+  .name {
+    font-size: 45px;
+    font-weight: 200;
+  }
+}
+@media all and (max-width: 736px) {
+  .section {
+    display: block;
+  }
+
+  .name {
+    font-size: 35px;
+    font-weight: 200;
+  }
+}
+@media all and (max-width: 480px) {
+  .name {
+    font-size: 25px;
+    font-weight: 200;
   }
 }
 
