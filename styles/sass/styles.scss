@@ -158,10 +158,10 @@
 
 	a {
 		position: absolute;
-		height: 100%; 
-		width: 100%; 
-		top: 0;
-		left: 0; 
+		height: 280px; 
+		width: 280px; 
+		// top: 0;
+		// left: 0; 
 	}
 
 	&:hover {
@@ -339,6 +339,10 @@
 	.name {
 		font-size: 35px; 
 		font-weight: 200; 
+	}
+
+	.slide:hover {
+		transform: none; 
 	}
 }
 @media all and (max-width: 480px) {
