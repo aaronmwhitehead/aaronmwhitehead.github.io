@@ -9,260 +9,275 @@
 	flex-direction: column; 
 	align-items: center; 
 	justify-content: center; 
+}
 
-	.header {
-		display: flex; 
-		flex-direction: column; 
-		align-items: center; 
-		width: 100%; 
-		height: 100vh; 
-		background-image: url("../../images/forest.jpg"); 
-		background-size: 1900px; 
-		background-repeat: no-repeat;
+.header {
+	display: flex; 
+	flex-direction: column; 
+	align-items: center; 
+	width: 100%; 
+	height: 100vh; 
+	background-image: url("../../images/forest.jpg"); 
+	background-size: 1900px; 
+	background-repeat: no-repeat;
+}
 
-		.header-info {
+.header-info {
+	display: flex; 
+	flex-direction: column; 
+	align-items: center;
+	margin-top: 200px; 
+	height: 230px; 
+	width: 60%;
+	color: white;
+}
+
+.headshot {
+	height: 300px; 
+	width: 300px; 
+	border-radius: 150px; 
+	margin-top: -125px;
+	background-image: url("../../images/sanfran.jpg");
+	background-size: cover;
+	position: absolute; 
+}
+
+.name {
+	text-align: center; 
+	margin-top: 180px; 
+	font-size: 65px; 
+	font-weight: 200; 
+}
+
+.contact {
+	font-weight: 300; 
+	font-size: 25px;
+}
+
+.body {
+	display: flex; 
+	flex-direction: column; 
+	width: 100%;
+	height: 100%; 
+}
+
+.animate-section {
+	animation: fadeInUp 1.8s ease-in-out 0s forwards;
+}
+
+.section {
+	display: flex; 
+	padding: 40px; 
+
+	&.experience {
+		background: #5CDB95; 
+		color: #EDF5E1;
+		opacity: 0; 
+	}
+
+	&.skills {
+
+		.education {
 			display: flex; 
-			flex-direction: column; 
-			align-items: center;
-			margin-top: 200px; 
-			height: 230px; 
-			width: 60%;
-			color: white;
-
-			.headshot {
-				height: 300px; 
-				width: 300px; 
-				border-radius: 150px; 
-				margin-top: -125px;
-				background-image: url("../../images/sanfran.jpg");
-				background-size: cover; 
-				position: absolute; 
-			}
-
-			.name {
-				text-align: center; 
-				margin-top: 180px; 
-			}
-
-			.contact {
-				font-weight: 300; 
-				font-size: 25px;
-			}
+			flex-direction: column;
+			opacity: 0; 
 		}
 	}
 
-	.body {
-		display: flex; 
-		flex-direction: column; 
-		width: 100%;
-		height: 100%;
-		// background: #5CDB95;
-
-		.section {
-			// display: flex; 
-			padding: 40px; 
-
-			&.experience {
-				background: #5CDB95; 
-				color: #EDF5E1;
-				opacity: 0; 
-
-				&.animate-experience {
-					animation: fadeInUp 1.8s ease-in-out 0s forwards;
-				}
-			}
-
-			&.skills {
-				.skills-graphs {
-					width: 100%;
-
-					.viewBox {
-						height: 100%;
-						width: 100%; 
-
-						.circle, .circle2, .circle3, .circle4, .circle5 {
-							fill: none;
-							stroke-width: 4;
-							transition: .4s stroke-width;
-							opacity: 0; 
-
-							&:hover {
-								stroke: #EDF5E1;
-								transition: .4s stroke-width;
-								stroke-width: 5; 
-								cursor: pointer;
-							}
-
-							&.animate-circle {
-								opacity: 1; 
-								animation: progress 1.7s ease-out forwards;
-							}
-						}
-
-						.circle {stroke: #8EE4AF;}
-						.circle2 {stroke: #5CDB95;}
-						.circle3 {stroke: #379683;}
-						.circle4 {stroke: #05386B;} 
-
-						.skill {
-							fill: #777; 
-							opacity: 0; 
-							font-size: 2px; 
-
-							&.animate-text {
-								animation: fadeInUp 1s ease-in-out 0s forwards;
-								animation-delay: 1s; 
-							}
-
-							.skill-subset {
-								opacity: 0; 
-								font-size: .8em; 
-								transition: all 1s;
-								fill: #aaa;
-
-								&.animate-skill {
-									transition: all .4s ease-out; 
-									opacity: 1.0; 
-								}
-							}
-						}
-					}
-				}
-
-				.education {
-					display: flex; 
-					flex-direction: column;
-					opacity: 0; 
-
-					&.animate-education {
-						animation: fadeInUp 1.8s ease-in-out 0s forwards;
-					}
-				}
-			}
-
-			&.projects {
-				opacity: 0; 
-
-				&.animate-projects {
-					animation: fadeInUp 1.8s ease-in-out 0s forwards;
-				}
-			}
-
-			.section-header {
-				flex: 1;
-				height: 100%; 
-				align-self: flex-start;
-				font-size: 45px; 
-				font-weight: 600; 
-				margin-right: 20px; 
-
-				.decor {
-					border-radius: 10px; 
-					background: #379683;
-					margin-bottom: 10px; 
-					width: 45px;
-					height: 10px; 
-				}
-			}
-
-			.section-body {
-				flex: 4;
-				display: flex; 
-				flex-direction: column; 
-				width: 100vw;
-
-				.heading {
-					font-size: 30px; 
-					color: #000; 
-					&.ra {
-						margin-top: 30px; 
-					}
-				}
-
-				.subheading {
-					color: #05386B;
-					font-size: 20px; 
-					margin-top: 10px;
-				}
-
-				.date {
-					font-size: 15px; 
-					margin-bottom: 10px; 
-					color: #000; 
-				}
-
-				p {
-					color: #000;
-					padding: 2px;
-				}
-
-				.swiper-container {
-				    width: 1000px;
-				    height: 300px;
-				    padding: 30px; 
-				    background: #8EE4AF;
-				    border-radius: 30px; 
-
-				    .swiper-slide {
-				    	display: flex; 
-				    	align-items: center; 
-				    	justify-content: center; 
-				    	height: 90%; 
-				    	border-radius: 20px; 
-				    	cursor: pointer;
-				    	
-				    	a {
-				    		width: 100%; 
-				    		height: 100%; 
-				    	}
-
-				    	&.slide-1 {
-				    		background: url("../../images/degreeplanner.png");
-				    		background-size: cover; 
-
-				    	}
-
-				    	&.slide-2 {
-				    		background: url("../../images/paradigm.png");
-				    		background-size: cover;
-				    		background-position: center; 
-				    	}
-
-				    	&.slide-3 {
-				    		background: url("../../images/cardioid-fiber.png");
-				    		background-size: cover;
-				    		background-position: center; 
-				    	}
-
-				    	&.slide-4 {
-				    		background: url("../../images/website.jpg");
-				    		background-size: cover;
-				    	}
-
-				    	&.slide-5 {
-				    		background: url("../../images/pancake-flipper.png");
-				    		background-size: cover;
-				    		background-position: center;
-				    	}
-				    }
-				}
-			}
-		}
-	}
-
-	.fab {
-		font-size: 40px; 
-		padding: 10px; 
-		color: #fff;
-	}
-
-	.footer {
-		height: 60px; 
-		width: 100vw;
-		background: #379683;
-		color: white; 
+	&.projects {
+		opacity: 0; 
 	}
 }
+
+.section-header {
+	flex: 1;
+	height: 100%; 
+	align-self: flex-start;
+	font-size: 45px; 
+	font-weight: 600; 
+	margin-right: 20px; 
+	white-space: nowrap;
+}
+
+.decor {
+	border-radius: 10px; 
+	background: #379683;
+	margin-bottom: 10px; 
+	width: 45px;
+	height: 10px; 
+}
+
+.section-body {
+	flex: 4;
+	display: flex; 
+	flex-direction: column; 
+	width: 100%;
+
+	p {
+		color: #000;
+		padding: 2px;
+	}
+
+	&.projects-body {
+		margin-right: 20px;
+		display: flex; 
+		flex-direction: row; 
+		flex-wrap: wrap; 
+		justify-content: center; 
+	}
+}
+
+.heading {
+	font-size: 30px; 
+	color: #000; 
+
+	&.ra {
+		margin-top: 30px; 
+	}
+}
+
+.subheading {
+	color: #05386B;
+	font-size: 20px; 
+	margin-top: 10px;
+}
+
+.date {
+	font-size: 15px; 
+	margin-bottom: 10px; 
+	color: #000; 
+}
+
+.slide {
+	transition: all .25s;
+	height: 280px;
+	width: 280px;
+	margin: 10px;
+	cursor: pointer;
+	padding: 10px;
+
+	a {
+		position: absolute;
+		height: 100%; 
+		width: 100%; 
+		top: 0;
+		left: 0; 
+	}
+
+	&:hover {
+		transform: scale(1.07);
+	}
+}
+
+.slide-1 {
+	background: url("../../images/degreeplanner.png"); 
+	background-size: cover; 
+}
+.slide-2 {
+	background: url("../../images/paradigm.png"); 
+	background-size: cover; 
+}
+.slide-3 {
+	background: url("../../images/cardioid-fiber.png"); 
+	background-size: cover; 
+}
+.slide-4 {
+	background: url("../../images/website.png"); 
+	background-size: cover; 
+	background-position: center;
+}
+.slide-5 {
+	background: url("../../images/pancake-flipper.png"); 
+	background-size: cover; 
+}
+.slide-6 {
+	background: url("../../images/escapopedia.png");
+	background-size: cover;
+}
+
+.circle, .circle2, .circle3, .circle4, .circle5 {
+	fill: none;
+	stroke-width: 4;
+	transition: .4s stroke-width;
+	opacity: 0; 
+
+	&:hover {
+		stroke: #EDF5E1;
+		transition: .4s stroke-width;
+		stroke-width: 5; 
+		cursor: pointer;
+	}
+
+	&.animate-circle {
+		opacity: 1; 
+		animation: progress 1.7s ease-out forwards;
+	}
+}
+
+.circle {stroke: #8EE4AF;}
+.circle2 {stroke: #5CDB95;}
+.circle3 {stroke: #379683;}
+.circle4 {stroke: #05386B;} 
+
+.skills-graphs {
+	width: 100%;
+}
+
+.viewBox {
+	height: 100%;
+	width: 100%; 
+	margin-left: -10px; 
+}
+
+.skill {
+	fill: #777; 
+	opacity: 0; 
+	font-size: 2px; 
+
+	&.animate-text {
+		animation: fadeInUp 1s ease-in-out 0s forwards;
+		animation-delay: 1s; 
+	}
+}
+
+.skill-subset {
+	opacity: 0; 
+	font-size: .8em; 
+	transition: all 1s;
+	fill: #aaa;
+
+	&.animate-skill {
+		transition: all .4s ease-out; 
+		opacity: 1.0; 
+	}
+}
+
+.fab {
+	font-size: 40px; 
+	margin: 10px; 
+	color: #fff;
+	transition: all 0.25s;
+
+	&:hover {
+		color: #aaa;
+	}
+}
+
+.footer {
+	height: 100px; 
+	width: 100vw;
+	background: #379683;
+	color: white; 
+	display: flex; 
+	flex-direction: column;
+}
+
+.copyright {
+	align-self: center; 
+	padding: 5px;
+}
+
+// Keyframes and media queries
 
 @keyframes progress {
 	0% { 
@@ -295,15 +310,16 @@
    } 
 } 
 
-@media all and (max-width: 1690px) {
-	.section {
-		display: flex; 
-	}
-	.name {
-		font-size: 65px; 
-		font-weight: 200; 
-	}
-}
+// @media all and (max-width: 4000px) {
+// 	.section {
+// 		display: flex; 
+// 	}
+// 	.name {
+// 		font-size: 65px; 
+// 		font-weight: 200; 
+// 	}
+// }
+
 @media all and (max-width: 1280px) {
 	.name {
 		font-size: 55px; 
@@ -311,16 +327,15 @@
 	}
 }
 @media all and (max-width: 980px) {
+	.section {
+		display: block; 
+	}
 	.name {
 		font-size: 45px; 
 		font-weight: 200; 
 	}
 }
 @media all and (max-width: 736px) {
-	.section {
-		display: block; 
-	}
-
 	.name {
 		font-size: 35px; 
 		font-weight: 200; 

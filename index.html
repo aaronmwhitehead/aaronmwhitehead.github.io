@@ -133,32 +133,25 @@
 			</div>
 			<div class="projects section">
 				<div class="section-header"><div class="decor"></div>Projects</div>
-				<div class="section-body">
-					<div class="swiper-container">
-						<!-- Additional required wrapper -->
-						<div class="swiper-wrapper">
-						<!-- Slides -->
-							<div class="swiper-slide slide-1"><a href="https://aaronmwhitehead.github.io/degreeplanner/" target="_blank"></a></div>
-							<div class="swiper-slide slide-2"><a href="https://github.com/aaronmwhitehead/paradigm" target="_blank"></a></div>
-							<div class="swiper-slide slide-3"><a href="https://github.com/aaronmwhitehead/cardioid-fiber" target="_blank"></a></div>
-							<div class="swiper-slide slide-4"></div>
-							<div class="swiper-slide slide-5"><a href="https://www.youtube.com/watch?v=jqUaF1kP37k" target="_blank"></a></div>
-						</div>
-						<!-- If we need pagination -->
-						<div class="swiper-pagination"></div>
-						<!-- <div class="swiper-button-next"></div>
-    					<div class="swiper-button-prev"></div> -->
-
-						<!-- If we need scrollbar -->
-						<!-- <div class="swiper-scrollbar"></div> -->
-					</div>
+				<div class="section-body projects-body">
+					<div class="slide slide-1"><a href="https://aaronmwhitehead.github.io/degreeplanner" target="_blank"></a></div>
+					<div class="slide slide-2"><a href="https://github.com/aaronmwhitehead/paradigm" target="_blank"></a></div>
+					<div class="slide slide-3"><a href="https://github.com/aaronmwhitehead/cardioid-fiber" target="_blank"></a></div>
+					<div class="slide slide-4"><a href="#"></a></div>
+					<div class="slide slide-5"><a href="https://www.youtube.com/watch?v=jqUaF1kP37k" target="_blank"></a></div>
+					<div class="slide slide-6"><a href="https://github.com/aaronmwhitehead/escapopedia" target="_blank"></a></div>
 				</div>
 			</div>
 		</div>
 		<div class="footer">
-			<a href="https://www.linkedin.com/in/aaron-whitehead-a3b448158/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-			<a href="http://github.com/aaronmwhitehead" target="_blank"><i class="fab fa-github"></i></a>
-			<a href="#"><i class="fab fa-instagram"></i></a>
+			<div>
+				<a href="https://www.linkedin.com/in/aaron-whitehead-a3b448158/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+				<a href="http://github.com/aaronmwhitehead" target="_blank"><i class="fab fa-github"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+			</div>
+			<div>
+				<span class="copyright">&copy; Aaron Whitehead 2019</span>
+			</div>
 		</div>
 	</div>
 	
@@ -210,23 +203,32 @@
 		var inview2 = new Waypoint.Inview({
 			element: $('.education'),
 			enter: function(direction) {
-				$('.education').addClass('animate-education'); 
+				$('.education').addClass('animate-section'); 
 			}
 		})
 
 		var inview3 = new Waypoint.Inview({
 			element: $('.experience'),
 			enter: function(direction) {
-				$('.experience').addClass('animate-experience'); 
+				$('.experience').addClass('animate-section'); 
 			}
 		})
 
 		var inview4 = new Waypoint.Inview({
 			element: $('.projects'),
 			enter: function(direction) {
-				$('.projects').addClass('animate-projects'); 
+				$('.projects').addClass('animate-section'); 
 			}
 		})
+
+		var inview5 = new Waypoint.Inview({
+			element: $('.footer'),
+			enter: function(direction) {
+				$('.footer').addClass('animate-section'); 
+			}
+		})
+
+		
 
 
 
