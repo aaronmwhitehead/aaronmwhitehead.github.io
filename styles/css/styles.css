@@ -16,7 +16,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 710px;
+  height: 100vh;
   background-image: url("../../images/forest.jpg");
   background-size: 1900px;
   background-repeat: no-repeat;
@@ -197,7 +197,6 @@
   stroke: #EDF5E1;
   transition: 0.4s stroke-width;
   stroke-width: 5;
-  cursor: pointer;
 }
 .circle.animate-circle, .circle2.animate-circle, .circle3.animate-circle, .circle4.animate-circle, .circle5.animate-circle {
   opacity: 1;
@@ -245,6 +244,17 @@
   font-size: 0.8em;
   transition: all 1s;
   fill: #aaa;
+  cursor: default;
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer */
+  -khtml-user-select: none;
+  /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none;
+  /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none;
+  /* Disable Android and iOS callouts*/
 }
 .skill-subset.animate-skill {
   transition: all 0.4s ease-out;
