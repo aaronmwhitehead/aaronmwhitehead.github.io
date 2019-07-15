@@ -72,17 +72,11 @@
 .section.experience {
   background: #5CDB95;
   color: #EDF5E1;
-  opacity: 0;
 }
 .section.skills .education {
   display: flex;
   flex-direction: column;
-  opacity: 0;
 }
-.section.projects {
-  opacity: 0;
-}
-
 .section-header {
   flex: 1;
   height: 100%;
@@ -146,6 +140,7 @@
   margin: 10px;
   cursor: pointer;
   padding: 10px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
 }
 .slide a {
   position: absolute;
@@ -154,6 +149,9 @@
 }
 .slide:hover {
   transform: scale(1.07);
+}
+.slide:active {
+  transform: scale(1);
 }
 
 .slide-1 {
@@ -191,7 +189,6 @@
   fill: none;
   stroke-width: 4;
   transition: 0.4s stroke-width;
-  opacity: 0;
 }
 .circle:hover, .circle2:hover, .circle3:hover, .circle4:hover, .circle5:hover {
   stroke: #EDF5E1;
@@ -231,7 +228,6 @@
 
 .skill {
   fill: #777;
-  opacity: 0;
   font-size: 2px;
 }
 .skill.animate-text {

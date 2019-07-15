@@ -34,7 +34,6 @@
 				<div class="social-icons">
 					<a href="https://www.linkedin.com/in/aaron-whitehead-a3b448158/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
 					<a href="http://github.com/aaronmwhitehead" target="_blank"><i class="fab fa-github"></i></a>
-					<a href="#"><i class="fab fa-instagram"></i></a>
 				</div>
 			</div>
 		</div>
@@ -116,36 +115,36 @@
 			<div class="experience section">
 				<div class="section-header"><div class="decor"></div>Experience</div>
 				<div class="section-body">
-					<span class="heading">SOFTWARE DEVELOPER INTERN</span>
+					<span class="heading">SOFTWARE DEVELOPER</span>
 					<span class="subheading">A MEDIOCRE CORPORATION</span>
 					<span class="date">MAY 2019 - AUGUST 2019</span>
 					<p>• Used MongoDB to create new models for internal data analytics pages </p>
 					<p>• Created responsive front-end applications using React</p>
 					<p>• Developed internal tools for staff and admin to better track the status of orders</p>
 					<p>• Held a role as an active individual contributor on an Agile development team</p>
-					<span class="heading ra">UI ENGINEER INTERN</span>
+					<span class="heading ra">UI ENGINEER</span>
 					<span class="subheading">COX AUTOMOTIVE INC.</span>
 					<span class="date">MAY 2018 - AUGUST 2018</span>
 					<p>• Developed unique, response-driven user experiences that affect thousands of sites throughout the platform</p>
 					<p>• Participated in a fast-paced Agile setting to ensure continuous delivery of quality code </p>
 					<p>• Held a role as an active developer of two highly efficient Scrum teams</p>
 					<p>• Worked closely with senior developers working on multiple release trains in a collaborative enterprise environment</p>
-					<span class="heading ra">RESIDENT ADVISOR</span>
+					<!-- <span class="heading ra">RESIDENT ADVISOR</span>
 					<span class="subheading">TEXAS A&M UNIVERSITY</span>
 					<span class="date">AUGUST 2017 - PRESENT</span>
 					<p>• Manages a floor of over 50 undergraduate students</p>
-					<p>• Counsels students though academic and social changes that come with college life</p>
+					<p>• Counsels students though academic and social changes that come with college life</p> -->
 				</div>
 			</div>
 			<div class="projects section">
 				<div class="section-header"><div class="decor"></div>Projects</div>
 				<div class="section-body projects-body">
+					<div class="slide slide-6"><a href="https://escapopedia.herokuapp.com/" target="_blank"></a></div>
 					<div class="slide slide-1"><a href="https://aaronmwhitehead.github.io/degreeplanner" target="_blank"></a></div>
 					<div class="slide slide-2"><a href="https://github.com/aaronmwhitehead/paradigm" target="_blank"></a></div>
 					<div class="slide slide-3"><a href="https://github.com/aaronmwhitehead/cardioid-fiber" target="_blank"></a></div>
 					<div class="slide slide-4"><a href="#"></a></div>
 					<div class="slide slide-5"><a href="https://www.youtube.com/watch?v=jqUaF1kP37k" target="_blank"></a></div>
-					<div class="slide slide-6"><a href="https://github.com/aaronmwhitehead/escapopedia" target="_blank"></a></div>
 				</div>
 			</div>
 		</div>
@@ -153,7 +152,6 @@
 			<div>
 				<a href="https://www.linkedin.com/in/aaron-whitehead-a3b448158/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
 				<a href="http://github.com/aaronmwhitehead" target="_blank"><i class="fab fa-github"></i></a>
-				<a href="#"><i class="fab fa-instagram"></i></a>
 			</div>
 			<div>
 				<span class="copyright">&copy; Aaron Whitehead 2019</span>
@@ -163,60 +161,6 @@
 	
 
 	<script type="text/javascript">
-		$('.header').paroller();  
-
-		var mySwiper = new Swiper ('.swiper-container', {
-		    // Optional parameters
-			direction: 'horizontal',
-			loop: false,
-			slidesPerView: 3,
-			spaceBetween: 30,
-
-		    // If we need pagination
-		    pagination: {
-		      el: '.swiper-pagination',
-		      clickable: true,
-		    },
-		  }); 
-
-		var inview = new Waypoint.Inview({
-			element: $('.back-end'),
-			entered: function(direction) {
-				$('.circle').addClass('animate-circle'); 
-				$('.circle2').addClass('animate-circle'); 
-				$('.circle3').addClass('animate-circle'); 
-				$('.circle4').addClass('animate-circle'); 
-				$('.skill').addClass('animate-text'); 
-			}
-		})
-
-		var inview2 = new Waypoint.Inview({
-			element: $('.education'),
-			enter: function(direction) {
-				$('.education').addClass('animate-section'); 
-			}
-		})
-
-		var inview3 = new Waypoint.Inview({
-			element: $('.experience'),
-			enter: function(direction) {
-				$('.experience').addClass('animate-section'); 
-			}
-		})
-
-		var inview4 = new Waypoint.Inview({
-			element: $('.projects'),
-			enter: function(direction) {
-				$('.projects').addClass('animate-section'); 
-			}
-		})
-
-		var inview5 = new Waypoint.Inview({
-			element: $('.footer'),
-			enter: function(direction) {
-				$('.footer').addClass('animate-section'); 
-			}
-		})
 
 		$(".circle").hover(function(){
 			$(".data-science > .skill-subset").addClass('animate-skill');
