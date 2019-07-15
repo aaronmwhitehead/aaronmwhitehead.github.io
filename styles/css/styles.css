@@ -148,7 +148,7 @@
   width: 280px;
 }
 .slide:hover {
-  transform: scale(1.07);
+  transform: scale(1.04);
 }
 .slide:active {
   transform: scale(1);
