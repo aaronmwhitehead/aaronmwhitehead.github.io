@@ -2,6 +2,7 @@
 	padding: 0;
 	margin: 0;
 	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
 }
 
 .container {
@@ -16,42 +17,31 @@
 	flex-direction: column; 
 	align-items: center; 
 	width: 100%; 
-	height: 100vh; 
+	height: 100%; 
 	background-image: url("../../images/forest.jpg"); 
-	background-size: 1900px; 
+	background-size: 100%; 
 	background-repeat: no-repeat;
-}
 
-.header-info {
-	display: flex; 
-	flex-direction: column; 
-	align-items: center;
-	margin-top: 200px; 
-	height: 230px; 
-	width: 60%;
-	color: white;
-}
-
-.headshot {
-	height: 300px; 
-	width: 300px; 
-	border-radius: 150px; 
-	margin-top: -125px;
-	background-image: url("../../images/sanfran.jpg");
-	background-size: cover;
-	position: absolute; 
-}
-
-.name {
-	text-align: center; 
-	margin-top: 180px; 
-	font-size: 65px; 
-	font-weight: 200; 
-}
-
-.contact {
-	font-weight: 300; 
-	font-size: 25px;
+	.header-info {
+		display: flex; 
+		flex-direction: column; 
+		align-items: center;
+		color: white;
+	}
+	
+	.headshot {
+		margin-top: 20px;
+		height: 300px; 
+		width: 300px; 
+		border-radius: 100%; 
+	}
+	
+	.name {
+		text-align: center; 
+		margin-top: 10px; 
+		font-size: 65px; 
+		font-weight: 200; 
+	}
 }
 
 .body {
@@ -61,10 +51,6 @@
 	height: 100%; 
 }
 
-.animate-section {
-	animation: fadeInUp 1.8s ease-in-out 0s forwards;
-}
-
 .section {
 	display: flex; 
 	padding: 40px; 
@@ -72,7 +58,6 @@
 	&.experience {
 		background: #5CDB95; 
 		color: #EDF5E1;
-		// opacity: 0; 
 	}
 
 	&.skills {
@@ -80,7 +65,6 @@
 		.education {
 			display: flex; 
 			flex-direction: column;
-			// opacity: 0; 
 		}
 	}
 }
@@ -175,7 +159,7 @@
 	background-size: cover; 
 }
 .slide-2 {
-	background: url("../../images/villainous.png"); 
+	background: url("../../images/abc-typer.png"); 
 	background-size: cover; 
 }
 .slide-3 {
@@ -196,22 +180,15 @@
 	background-size: cover;
 }
 
+.slide-7 {
+	background: url("../../images/template-generator.png");
+	background-size: cover;
+}
+
 .circle, .circle2, .circle3, .circle4, .circle5 {
 	fill: none;
 	stroke-width: 4;
 	transition: .4s stroke-width;
-	// opacity: 0; 
-
-	&:hover {
-		stroke: #EDF5E1;
-		transition: .4s stroke-width;
-		stroke-width: 5; 
-	}
-
-	&.animate-circle {
-		opacity: 1; 
-		animation: progress 1.7s ease-out forwards;
-	}
 }
 
 .circle {stroke: #8EE4AF;}
@@ -231,31 +208,19 @@
 
 .skill {
 	fill: #777; 
-	// opacity: 0; 
 	font-size: 2px; 
-
-	&.animate-text {
-		animation: fadeInUp 1s ease-in-out 0s forwards;
-		animation-delay: 1s; 
-	}
 }
 
 .skill-subset {
-	opacity: 0; 
 	font-size: .8em; 
 	transition: all 1s;
 	fill: #aaa;
 	cursor: default;
 	-moz-user-select: none; /* Firefox */
 	-ms-user-select: none; /* Internet Explorer */
-   	-khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
-  	-webkit-user-select: none; /* Chrome, Safari, and Opera */
-  	-webkit-touch-callout: none; /* Disable Android and iOS callouts*/
-
-	&.animate-skill {
-		transition: all .4s ease-out; 
-		opacity: 1.0; 
-	}
+	-khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+	-webkit-user-select: none; /* Chrome, Safari, and Opera */
+	-webkit-touch-callout: none; /* Disable Android and iOS callouts*/
 }
 
 .fab {
@@ -271,7 +236,7 @@
 
 .footer {
 	height: 100px; 
-	width: 100vw;
+	width: 100%;
 	background: #379683;
 	color: white; 
 	display: flex; 
@@ -315,16 +280,6 @@
       transform: translateY(20px);
    } 
 } 
-
-// @media all and (max-width: 4000px) {
-// 	.section {
-// 		display: flex; 
-// 	}
-// 	.name {
-// 		font-size: 65px; 
-// 		font-weight: 200; 
-// 	}
-// }
 
 @media all and (max-width: 1280px) {
 	.name {

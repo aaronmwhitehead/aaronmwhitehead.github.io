@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
 }
 
 .container {
@@ -16,41 +17,28 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-image: url("../../images/forest.jpg");
+  background-size: 100%;
   background-repeat: no-repeat;
 }
-
-.header-info {
+.header .header-info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 200px;
-  height: 230px;
-  width: 60%;
   color: white;
 }
-
-.headshot {
+.header .headshot {
+  margin-top: 20px;
   height: 300px;
   width: 300px;
-  border-radius: 150px;
-  margin-top: -125px;
-  background-image: url("../../images/sanfran.jpg");
-  background-size: cover;
-  position: absolute;
+  border-radius: 100%;
 }
-
-.name {
+.header .name {
   text-align: center;
-  margin-top: 180px;
+  margin-top: 10px;
   font-size: 65px;
   font-weight: 200;
-}
-
-.contact {
-  font-weight: 300;
-  font-size: 25px;
 }
 
 .body {
@@ -58,10 +46,6 @@
   flex-direction: column;
   width: 100%;
   height: 100%;
-}
-
-.animate-section {
-  animation: fadeInUp 1.8s ease-in-out 0s forwards;
 }
 
 .section {
@@ -160,7 +144,7 @@
 }
 
 .slide-2 {
-  background: url("../../images/villainous.png");
+  background: url("../../images/abc-typer.png");
   background-size: cover;
 }
 
@@ -185,19 +169,15 @@
   background-size: cover;
 }
 
+.slide-7 {
+  background: url("../../images/template-generator.png");
+  background-size: cover;
+}
+
 .circle, .circle2, .circle3, .circle4, .circle5 {
   fill: none;
   stroke-width: 4;
   transition: 0.4s stroke-width;
-}
-.circle:hover, .circle2:hover, .circle3:hover, .circle4:hover, .circle5:hover {
-  stroke: #EDF5E1;
-  transition: 0.4s stroke-width;
-  stroke-width: 5;
-}
-.circle.animate-circle, .circle2.animate-circle, .circle3.animate-circle, .circle4.animate-circle, .circle5.animate-circle {
-  opacity: 1;
-  animation: progress 1.7s ease-out forwards;
 }
 
 .circle {
@@ -230,31 +210,17 @@
   fill: #777;
   font-size: 2px;
 }
-.skill.animate-text {
-  animation: fadeInUp 1s ease-in-out 0s forwards;
-  animation-delay: 1s;
-}
 
 .skill-subset {
-  opacity: 0;
   font-size: 0.8em;
   transition: all 1s;
   fill: #aaa;
   cursor: default;
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* Internet Explorer */
-  -khtml-user-select: none;
-  /* KHTML browsers (e.g. Konqueror) */
-  -webkit-user-select: none;
-  /* Chrome, Safari, and Opera */
-  -webkit-touch-callout: none;
-  /* Disable Android and iOS callouts*/
-}
-.skill-subset.animate-skill {
-  transition: all 0.4s ease-out;
-  opacity: 1;
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer */
+  -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+  -webkit-user-select: none; /* Chrome, Safari, and Opera */
+  -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
 }
 
 .fab {
@@ -269,7 +235,7 @@
 
 .footer {
   height: 100px;
-  width: 100vw;
+  width: 100%;
   background: #379683;
   color: white;
   display: flex;
@@ -318,12 +284,10 @@
   .section {
     display: block;
   }
-
   .name {
     font-size: 45px;
     font-weight: 200;
   }
-
   .slide:hover {
     transform: none;
   }
